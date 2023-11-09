@@ -34,7 +34,7 @@ def generate_story(scenario):
     # Corrected input variable name to 'input_variable' instead of 'input_variables'
     prompt = PromptTemplate(template=template, input_variables=["scenario"])
 
-    story_llm = LLMChain(llm=OpenAI(model_name="gpt-3.5-turbo", temperature=1, openai_api_key='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'), prompt=prompt, verbose=True)
+    story_llm = LLMChain(llm=OpenAI(model_name="gpt-3.5-turbo", temperature=1, openai_api_key='provide_your_own_APIkey'), prompt=prompt, verbose=True)
 
     story = story_llm.predict(scenario=scenario)
     print(story)
@@ -45,9 +45,15 @@ def generate_story(scenario):
 
 
 def main():
-    st.set_page_config(page_title="img 2 audio story", page_icon="chart_with_upwards_trend")
+    # Set Streamlit page config
+    st.set_page_config(
+    page_title="Image to Audio Story",
+    page_icon="✨",  # You can customize the icon
+    layout="centered",)
 
-    st.header("Turn Img Into Audio Story")
+    # Page layout
+    st.title("Image to Audio Story 📸➡️🔊")
+    st.subheader("Turn an Image into an Audio Story")
     uploaded_file = st.file_uploader("Choose an image...", type="jpg")
 
     if uploaded_file is not None:
