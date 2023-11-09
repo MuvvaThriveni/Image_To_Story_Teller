@@ -1,0 +1,8 @@
+transformers
+tiktoken == 0.4.0
+langchain == 0.0.332
+python-dotenv == 1.0.0
+streamlit == 1.22.0
+gtts
+OpenAI == 0.28.0
+tensorflow
