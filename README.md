@@ -1,4 +1,6 @@
 # Image to Audio Story Generator
+
+![](photo.jpg)
  
 Turn images into captivating audio stories with just a click! This innovative project combines image analysis, natural language generation, and text-to-speech conversion to create audio stories from uploaded images.
  
