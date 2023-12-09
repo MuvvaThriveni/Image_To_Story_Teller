@@ -1,10 +1,10 @@
 # Image to Audio Story Generator
-
-![](photo.png)
  
 Turn images into captivating audio stories with just a click! This innovative project combines image analysis, natural language generation, and text-to-speech conversion to create audio stories from uploaded images.
  
 The Image to Audio Story Generator is a Streamlit-based web application that leverages cutting-edge technologies to transform images into engaging audio narratives. This project aims to bring creativity and storytelling to a whole new level by automatically generating stories based on the content of uploaded images.
+
+![](photo.png)
 
 ## Features
 
